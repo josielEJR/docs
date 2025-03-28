@@ -11,69 +11,45 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Agents",
             "pages": [
-              "api-reference/introduction"
+              
+              "api-reference/agents/lista-todos-os-agentes"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Webhooks",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/webhooks/webhooks"
+            ]
+          },
+          {
+            "group": "Actions",
+            "pages": [
+              "api-reference/actions/lista",
+              "api-reference/actions/cria",
+              "api-reference/actions/actions",
+              "api-reference/actions/deleta"
+            ]
+          },
+          {
+            "group": "Voices",
+            "pages": [
+              "api-reference/voices/voices-list"
+            ]
+          },
+          {
+            "group": "Calls",
+            "pages": [
+              "api-reference/calls/calls"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -98,5 +74,8 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "api": {
+    "baseUrl": "http://localhost:3000/docs-json"
   }
 }

@@ -2,3 +2,45 @@
 title: 'Get Plants'
 openapi: 'GET /plants'
 ---
+
+## Description
+
+This endpoint returns all the plants available in the system.
+
+### Endpoint
+
+**GET** `/plants`
+
+### Parameters
+
+- **limit** (optional, integer): The maximum number of results to be returned.
+
+### Request Example
+
+```http
+GET /plants?limit=10 HTTP/1.1
+Host: localhost:3000
+Authorization: Bearer <token>
+```
+
+### Response Example
+
+```json
+[
+    {
+        "id": 1,
+        "name": "Plant A",
+        "tag": "tag1"
+    },
+    {
+        "id": 2,
+        "name": "Plant B",
+        "tag": "tag2"
+    }
+]
+```
+
+### Response Codes
+
+- **200 OK**: Returns the list of plants.
+- **400 Bad Request**: Error in the request, such as invalid parameters.
